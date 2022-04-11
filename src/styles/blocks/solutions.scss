@@ -1,0 +1,205 @@
+.solutions {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 120px auto 150px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 157%;
+    color: $color-gray;
+  }
+
+  &__subtitle {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #130430;
+
+    &--pink {
+      color: $color-pink;
+    }
+  }
+
+  &__content {
+    max-width: 409px;
+  }
+
+  &__number {
+    font-family: "Georgia", sans-serif;
+    font-size: 150px;
+    line-height: 150%;
+    color: $color-pink;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 150%;
+    color: $color-gray;
+  }
+
+  &__section {
+    display: flex;
+    margin-bottom: 116px;
+
+    &--right {
+      align-self: flex-start;
+    }
+
+    &--left {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+
+    &-container {
+      position: relative;
+
+      &--right {
+        margin-left: 55px;
+      }
+
+      &--left {
+        margin-right: 55px;
+      }
+    }
+
+    &-deco {
+      position: absolute;
+      bottom: 33%;
+      height: 71%;
+      width: 811px;
+      background: $color-purple;
+
+      &--right {
+        left: 57%;
+      }
+
+      &--left {
+        right: 57%;
+      }
+
+      &-small {
+        position: absolute;
+        top: 5%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        max-width: 747px;
+        background-color: $color-purple;
+        z-index: 2;
+
+        &--right {
+          left: 15%;
+          align-items: flex-start;
+        }
+
+        &--left {
+          right: 15%;
+          align-items: flex-end;
+        }
+      }
+
+      &-title-container {
+        @extend %flex-align-center;
+        flex-direction: column;
+        margin: 0 41px;
+        max-width: 255px;
+        text-align: center;
+      }
+    }
+
+    &-title {
+      margin: 0;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 150%;
+      color: $color-white;
+
+      &-deco {
+        margin: 0;
+        font-family: "Noticia Text", serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 216px;
+        color: #f4f4ed;
+        opacity: 0.25;
+      }
+    }
+  }
+}
+
+@media (max-width: 1950px) {
+  .solutions__image-deco {
+    width: 120%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .solutions__image-deco {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1112px) {
+  .solutions {
+    &__section {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__subtitle {
+      font-size: 35px;
+      line-height: 125%;
+    }
+
+    &__number {
+      font-size: 10em;
+    }
+
+    &__content {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__image {
+      width: 100%;
+
+      &-container {
+        width: 50%;
+
+        &--right {
+          margin-left: 0;
+        }
+
+        &--left {
+          margin-right: 0;
+          align-self: flex-end;
+        }
+      }
+
+      &-deco {
+        width: 143%;
+      }
+
+      &-title {
+        font-size: 15px;
+        line-height: 100%;
+
+        &-deco {
+          margin-top: 25px;
+          font-size: 72px;
+          line-height: 54px;
+        }
+      }
+    }
+  }
+}

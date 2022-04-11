@@ -2,12 +2,563 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Noticia+Text:ital,wght@1,700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
+    <title>Document</title>
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header header--transparent" id="header">
+      <a href="/">
+        <img src="./img/Logo.svg" alt="COI-logo">
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#solutions"
+              class="nav__link nav__link--header nav__link--no-index"
+              id="solutionsLink"
+            >
+              Наші рішення
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              href="#promo"
+              class="nav__link nav__link--header nav__link--no-index"
+              id="promoLink"
+            >
+              Допомога
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        class="header__menu-button"
+      >
+        <div class="header__menu-part"></div>
+
+        <div class="header__menu-part"></div>
+
+        <div class="header__menu-part"></div>
+      </button>
+    </header>
+
+    <main class="main">
+      <section class="main__section banner">
+        <div class="banner__slider">
+          <div class="banner__container">
+            <button
+              type="button"
+              class="banner__arrow banner__arrow--left"
+            >
+              <div class="banner__arrow-icon banner__arrow-icon--up"></div>
+              <div class="banner__arrow-icon banner__arrow-icon--middle"></div>
+              <div class="banner__arrow-icon banner__arrow-icon--down"></div>
+            </button>
+
+            <div class="banner__slide slide">
+              <span class="slide__title">
+                Слайд, якого немає в макеті
+
+                <span class="slide__title slide__title--pink">
+                  1
+                </span>
+              </span>
+
+              <p class="slide__subtitle">
+                Цього слайда немає в макеті, тому щоб продемонструвати роботу слайдера я пишу цей текст.
+              </p>
+
+              <a href="/" class="slide__link button">
+                Кнопка слайда, якого немає в макеті
+              </a>
+            </div>
+
+            <div class="banner__slide slide banner__slide--active">
+              <span class="slide__title">
+                Ми робимо
+
+                <span class="slide__title slide__title--pink">
+                  класний бізнес
+                </span>
+              </span>
+
+              <p class="slide__subtitle">
+                Ми допоможемо вам зробити ваш бізнес успішним та прибутковим. Допомагаємо всім, хто цього хоче!
+              </p>
+
+              <a href="#help" class="slide__link button">Безкоштовна консультація</a>
+            </div>
+
+            <div class="banner__slide slide">
+              <span class="slide__title">
+                Слайд, якого немає в макеті
+
+                <span class="slide__title slide__title--pink">
+                  2
+                </span>
+              </span>
+
+              <p class="slide__subtitle">
+                Оскільки і цього слайда немає в макеті, то я знову пишу цей текст.
+              </p>
+
+              <a href="/" class="slide__link button">
+                Ця кнопка зробленна лише для демонстрації роботи слайдера.
+              </a>
+            </div>
+
+            <button
+              type="button"
+              class="banner__arrow banner__arrow--right"
+            >
+              <div class="banner__arrow-icon banner__arrow-icon--up"></div>
+              <div class="banner__arrow-icon banner__arrow-icon--middle"></div>
+              <div class="banner__arrow-icon banner__arrow-icon--down"></div>
+            </button>
+          </div>
+        </div>
+
+        <div class="banner__control">
+          <button
+            type="button"
+            class="banner__button"
+          ></button>
+
+          <button
+            type="button"
+            class="banner__button banner__button--active"
+          ></button>
+
+          <button
+            type="button"
+            class="banner__button"
+          ></button>
+        </div>
+      </section>
+
+      <section class="main__section solutions" id="solutions">
+        <span class="solutions__title">
+          Наші рішення
+        </span>
+
+        <span class="solutions__subtitle">
+          У нас є
+
+          <span class="solutions__subtitle solutions__subtitle--pink">
+            3
+          </span>
+
+          вирішення проблеми для вашого бізнесу
+        </span>
+
+        <section class="solutions__section solutions__section--right">
+          <div class="solutions__content">
+            <span class="solutions__number">
+              01
+            </span>
+            <br>
+            <span class="solutions__text">
+              Шукайте однодумців. Часто в бізнес
+              набирають співробітників, аби закрити
+              вакансію. Мені це нагадує, коли є готовий
+              костюм і його пробують одягнути на всіх,
+              кого заманеться, переконуючи в першу чергу
+              самих себе, що він підходить ідеально.
+              Рішення: Шукайте людей, лояльних до Вас,
+              які переймуться місією Вашого бізнесу.
+              Важливо мати помічників навіть у малому і
+              середньому бізнесі. Кожен із нас має сильні
+              сторони-розкривайте їх.
+            </span>
+          </div>
+
+          <div class="solutions__image-container solutions__image-container--right">
+            <img
+						  src="./img/PhotoTwo.png"
+							alt="Шукайте однодумців"
+							class="solutions__image"
+						>
+            <div class="solutions__image-deco solutions__image-deco--right">
+              <div class="solutions__image-deco-small solutions__image-deco-small--right">
+                <div class="solutions__image-deco-title-container">
+                  <p class="solutions__image-title-deco">
+                    “
+                  </p>
+
+                  <p class="solutions__image-title">
+                    Шукайте однодумців
+                  </p>
+
+                  <p class="solutions__image-title-deco">
+                    ”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="solutions__section solutions__section--left">
+          <div class="solutions__content">
+            <span class="solutions__number">
+              02
+            </span>
+            <br>
+            <span class="solutions__text">
+              Бізнесмени часто тільки зациклюються над
+              продажами і пошуком нових клієнтів. І якщо
+              маєте напрацьовану базу клієнтів-добре.
+              Рішення: Тепер вчіться з нею працювати.
+              Якщо Ви маєте базу з 3000 клієнтів, які у вас
+              колись щось купили, дуже легко піднімете
+              продажі на 40%.
+            </span>
+          </div>
+
+          <div class="solutions__image-container solutions__image-container--left">
+            <div class="solutions__image-deco solutions__image-deco--left">
+              <div class="solutions__image-deco-small solutions__image-deco-small--left">
+                <div class="solutions__image-deco-title-container">
+                  <p class="solutions__image-title-deco">“</p>
+                  <p class="solutions__image-title">Збирайте базу свої клієнтів</p>
+                  <p class="solutions__image-title-deco">”</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./img/PhotoOne.png"
+              alt="Збирайте базу свої клієнтів"
+              class="solutions__image"
+            >
+          </div>
+        </section>
+
+        <section class="solutions__section solutions__section--right">
+          <div class="solutions__content">
+            <span class="solutions__number">
+              03
+            </span>
+            <br>
+            <span class="solutions__text">
+              Як зараз виглядають більшість пропозицій:
+              товар – ціна. Людям непросто прийняти
+              рішення зупинитись саме на покупці вашого
+              товару. Тому що звідусіль поступає маса
+              всього і ще більше, ніж можна осмислити.
+              Іде боротьба за увагу клієнта. Рішення:
+              обов’язково ставте клієнтам обмеження по
+              часу на прийняття рішення – це піднімає
+              цінність ваших послуг.
+            </span>
+          </div>
+
+          <div class="solutions__image-container solutions__image-container--right">
+            <div class="solutions__image-deco solutions__image-deco--right">
+              <div class="solutions__image-deco-small solutions__image-deco-small--right">
+                <div class="solutions__image-deco-title-container">
+                  <p class="solutions__image-title-deco">“</p>
+                  <p class="solutions__image-title">Ставте обмеження по часу</p>
+                  <p class="solutions__image-title-deco">”</p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="./img/Photo.png"
+              alt="Ставте обмеження по часу"
+              class="solutions__image"
+            >
+          </div>
+        </section>
+      </section>
+
+      <section class="main__section promo" id="promo">
+        <container class="promo__container">
+          <div class="promo__content">
+            <h1 class="promo__title">
+              Ми професіонали у ведденні бізнесу
+            </h1>
+
+            <p class="promo__subtitle">
+              Ми настільки круті, що у нас стільки грошей,
+              що нам немає сенсу вас обманювати.
+              <br>
+
+              <br>
+              Даємо зуб і хрест на пузі.
+            </p>
+
+            <a class="promo__link button" href="#help">Консультація</a>
+          </div>
+
+          <container class="promo__image-container">
+            <div class="promo__image-deco"></div>
+
+            <img
+              src="./img/Rectangle 9.png"
+              alt="Консультація"
+              class="promo__image"
+            >
+          </container>
+        </container>
+      </section>
+
+      <section class="main__section help" id="help">
+        <container class="help__container">
+          <div class="help__image-container">
+            <div class="help__image-deco"></div>
+
+            <img
+              src="./img/Rectangle 15.png"
+              alt="Допомога"
+              class="help__image"
+            >
+          </div>
+
+          <form
+            class="help__form"
+            id="Form"
+          >
+            <span class="help__title">Допомога</span>
+
+            <span class="help__subtitle">
+              Запитуйте у
+
+              <span class="help__subtitle help__subtitle--pink">
+                професіоналів
+              </span>
+            </span>
+
+            <div class="help__input-container">
+              <div class="help__input-title">Ім’я*</div>
+
+              <input
+                type="text"
+                class="help__input"
+                id="Name"
+              >
+
+              <div
+                alt="Status"
+                class="help__status"
+                id="NameStatus"
+              ></div>
+            </div>
+
+            <span class="help__warning" id="NameWarning">
+              <div class="help__warning-icon">!</div>
+
+              Введіть мінімум 3 символи
+            </span>
+
+            <div class="help__input-container">
+              <div class="help__input-title">Телефон</div>
+
+              <input
+                type="tel"
+                class="help__input"
+                value="+38(000)___-__-__"
+              >
+            </div>
+
+            <div class="help__input-container">
+              <div class="help__input-title">Email *</div>
+
+              <input
+                type="email"
+                class="help__input"
+                id="Email"
+              >
+
+              <div
+                alt="Status"
+                class="help__status"
+                id="EmailStatus"
+              ></div>
+            </div>
+
+            <span class="help__warning" id="EmailWarning">
+              <div class="help__warning-icon">!</div>
+
+              Помилка написання електронної пошти
+            </span>
+
+            <div class="help__select">
+              <button
+                type="button"
+                class="help__placeholder"
+                id="selectPlaceholder"
+              >
+                Оберіть пункт
+              </button>
+
+              <button
+                type="button"
+
+                class="help__option help__option--one"
+              >
+                Пункт 1
+              </button>
+
+              <button
+                type="button"
+                onclick="changeOption(1)"
+                class="help__option help__option--two"
+              >
+                Пункт 2
+              </button>
+
+              <button
+                type="button"
+                onclick="changeOption(2)"
+                class="help__option help__option--three"
+              >
+                Пункт 3
+              </button>
+
+              <button
+                type="button"
+                onclick="changeOption(3)"
+                class="help__option help__option--four"
+              >
+                Пункт 4
+              </button>
+            </div>
+
+            <div class="help__buttons">
+              <div class="help__button">
+                <input type="checkbox" class="help__checkbox">
+
+                Checkbox 1
+              </div>
+
+              <div class="help__button">
+                <input type="checkbox" class="help__checkbox">
+
+                Checkbox 2
+              </div>
+
+              <div class="help__button">
+                <input type="checkbox" class="help__checkbox">
+
+                Checkbox 3
+              </div>
+            </div>
+
+            <div class="help__buttons">
+              <div class="help__button">
+                <label for="radio-1" class="help__radio-label">
+                  <input
+                    type="radio"
+                    class="help__radio"
+                    id="radio-1"
+                    name="radio"
+                  >
+                </label>
+
+                Radiobutton 1
+              </div>
+
+              <div class="help__button">
+                <label for="radio-2" class="help__radio-label">
+                  <input
+                    type="radio"
+                    class="help__radio"
+                    id="radio-2"
+                    name="radio"
+                    >
+                </label>
+
+                Radiobutton 1
+              </div>
+
+              <div class="help__button">
+                <label for="radio-3" class="help__radio-label">
+                  <input
+                    type="radio"
+                    class="help__radio"
+                    id="radio-3"
+                    name="radio"
+                    >
+                </label>
+
+                Radiobutton 1
+              </div>
+            </div>
+
+            <textarea class="help__text" placeholder="Коментар"></textarea>
+
+            <input
+              type="submit"
+              class="help__submit button"
+              id="Submit"
+              value="Відправити дані"
+            >
+          </form>
+
+          <div class="message-background">
+            <div class="message">
+              <div class="message__container">
+                <div class="message__icon">
+                  <div class="message__part message__part--one"></div>
+
+                  <div class="message__part message__part--two"></div>
+                </div>
+
+                <button
+                  type="button"
+                  class="message__exit"
+                >
+                  <div class="message__exit-part message__exit-part--one"></div>
+
+                  <div class="message__exit-part message__exit-part--two"></div>
+                </button>
+              </div>
+
+              <h1 class="message__title">Ваше повідомлення відправлено успшно!</h1>
+
+              <p class="message__subtitle">Дякуємо! Ваше повідомлення відправлено успішно. Очікуйте на відповідь!</p>
+            </div>
+          </div>
+        </container>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="/" class="footer__logo logo">
+        <img src="./img/Logo.svg" alt="COI-logo">
+      </a>
+
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#solutions" class="nav__link">
+              Наші рішення
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#promo" class="nav__link">
+              Допомога
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <span>© 2020 Всі права захищенні</span>
+    </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

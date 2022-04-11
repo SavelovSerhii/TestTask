@@ -1,7 +1,27 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/vars";
+@import "./utils/placeholders";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/help.scss";
+@import "./blocks/message.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/reset.scss";
+@import "./blocks/solutions.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/slide.scss";
 
-body {
-  background: $c-gray;
+.button {
+  border-radius: 4px;
+  color: $color-white;
+  background: $color-pink;
+  padding: 20px 50px;
+
+  &:hover {
+    background-color: $color-pink-light;
+  }
+
+  &:active {
+    background-color: $color-pink-dark;
+  }
 }

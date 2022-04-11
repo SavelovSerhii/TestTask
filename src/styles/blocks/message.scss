@@ -1,0 +1,152 @@
+.message {
+  position: fixed;
+  top: 25%;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+  background-color: $color-white;
+  text-align: center;
+  z-index: 3;
+
+  &-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1604344d;
+    z-index: 3;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  &__title {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 14px;
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  &__subtitle {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 36px;
+    color: $color-gray-light;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__icon {
+    position: relative;
+    top: 40px;
+    left: calc(50% - 25px);
+    @extend %flex-both-center;
+    width: 50px;
+    height: 50px;
+    background-color: $color-pink;
+    border-radius: 32px;
+  }
+
+  &__part {
+    position: relative;
+    width: 2px;
+    background-color: $color-white;
+
+    &--one {
+      height: 14px;
+      top: 4px;
+      right: 6px;
+      transform: rotate(-45deg);
+    }
+
+    &--two {
+      height: 24px;
+      left: 5px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__exit {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    @extend %flex-both-center;
+    height: 28px;
+    width: 28px;
+    border: 0;
+    background-color: $color-white;
+    cursor: pointer;
+
+    &-part {
+      position: absolute;
+      width: 4px;
+      height: 20px;
+      background-color: $color-gray-light;
+
+      &--one {
+        transform: rotate(45deg);
+      }
+      &--two {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .message {
+    left: 31%;
+  }
+}
+
+@media (max-width: 780px) {
+  .message {
+    width: 75%;
+
+    &__title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .message {
+    &__title {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .message {
+    &__title {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
